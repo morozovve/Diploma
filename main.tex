@@ -1,0 +1,86 @@
+\documentclass[oneside,senior,etd]{BYUPhys}
+
+\usepackage[utf8]{inputenc}
+\usepackage{rotating} 
+
+\usepackage[english, russian]{babel}
+\usepackage{amsfonts} % Пакеты для математических символов и теорем
+\usepackage{amstext}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{graphicx} % Пакеты для вставки графики
+\graphicspath{ {images/} }
+\usepackage{subcaption}
+\usepackage{color}
+\usepackage[unicode]{hyperref}
+\usepackage[nottoc]{tocbibind} % Для того, чтобы список литературы отображался в оглавлении
+\usepackage{algorithmic} % Для записи алгоритмов в псевдокоде
+\usepackage{algorithm}
+\usepackage{verbatim} % Для вставок заранее подготовленного текста в режиме as-is
+\usepackage{listings}
+
+\usepackage{commath}
+\newcommand\Tau{\mathcal{T}}
+\newcommand{\R}{\mathbb{R}}
+\usepackage{color}
+\usepackage[colorinlistoftodos, prependcaption]{todonotes}
+\usepackage{multirow}
+\newcommand*{\MyIndent}{\hspace*{0.2cm}}%
+
+\Chair{Кафедра интеллектуальных информационных технологий}
+\Lab{~}
+\Year{2020}
+  \Month{Май}
+  \City{Москва}
+  \AuthorText{Автор}
+  \Author{Морозов Виктор Евсеевич}
+  \AuthorEng{Viktor Morozov}
+  \AcadGroup{620}
+
+  \TitleTop{Методы прогнозирования потоков}
+  \TitleMiddle{сложноструктурированных событий} % leave empty if you don't need it
+  \TitleBottom{} % leave empty if you don't need it
+  \TitleTopEng{}
+  \TitleBottomEng{} % leave empty if you don't need it  
+  \docname{МАГИСТЕРСКАЯ ДИССЕРТАЦИЯ}
+  \Advisor{к.ф-м.н. Петровский Михаил Игоревич}
+  \AdvisorDegree{}
+
+\Abstract{}
+\AbstractEng{Abstract}
+
+
+%%%% DON'T change this. It is here because .sty does not support cyrillic cp properly %%%%
+\University{Московский государственный университет имени М.В. Ломоносова}
+\Faculty{Факультет вычислительной математики и кибернетики}
+\GrText{гр.}
+\AdvisorText{Научные руководители}
+\AbstractText{Аннотация}
+
+\begin{document}
+\fixmargins
+\makepreliminarypages
+
+\oneandhalfspace
+
+\tableofcontents
+
+\include{intro} % Введение
+\include{task_statement} % Постановка задачи
+\include{related_review} % Обзор существующих решений
+\include{research_and_solving} % Исследование и построение решения задачи
+\include{outro}
+%\include{further_work} % Дальнейшая работа
+%\include{Chapter7}
+%\include{Chapter8} % Заключение%
+%\include{Chapter9} % Приложение%
+%\include{Chapter10} % Приложение%
+
+\nocite{*}
+\bibliographystyle{gost71u} % Для соответствия требованиям об оформлении списка литературы
+\bibliography{references}
+
+%\include{Appendix} % Приложение
+
+\end{document}
