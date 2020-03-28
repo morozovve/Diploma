@@ -1,4 +1,4 @@
-\documentclass[oneside,senior,etd]{BYUPhys}
+\documentclass[oneside,senior,etd,right=2cm]{BYUPhys}
 
 \usepackage[utf8]{inputenc}
 \usepackage{rotating} 
@@ -27,6 +27,10 @@
 \usepackage[colorinlistoftodos, prependcaption]{todonotes}
 \usepackage{multirow}
 \newcommand*{\MyIndent}{\hspace*{0.2cm}}%
+\usepackage[margin=1.4in]{geometry}
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
 
 \Chair{Кафедра интеллектуальных информационных технологий}
 \Lab{~}
@@ -65,13 +69,14 @@
 \oneandhalfspace
 
 \tableofcontents
-
+{\fontsize{13}{15}\selectfont
 \include{intro} % Введение
 \include{task_statement} % Постановка задачи
 \include{related_review} % Обзор существующих решений
 \include{research_and_solving} % Исследование и построение решения задачи
 \include{experiments}
 \include{outro}
+}
 %\include{further_work} % Дальнейшая работа
 %\include{Chapter7}
 %\include{Chapter8} % Заключение%
@@ -80,7 +85,7 @@
 
 \nocite{*}
 \bibliographystyle{gost71u} % Для соответствия требованиям об оформлении списка литературы
-\bibliography{references}
+{\fontsize{13}{15}\selectfont \bibliography{references}}
 
 %\include{Appendix} % Приложение
 
